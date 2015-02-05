@@ -4,14 +4,17 @@
     </div>
     <div class="col-sm-12 col-md-12 center hex-container">
       <!-- <button ng-repeat="color in colorOptions" class="btn btn-default colorButton" style="background-color: {{color}}; width: {{size}}%;" ng-click="changeColor(color)">{{color}}</button> -->
-      <div ng-repeat="value in hexValues" class="hex" style="background-color: {{value}}; width: {{size}}%;">{{value}}</div>
+      <div ng-repeat="value in hexValues" class="hex" style="background-color: {{value}}; width: {{size}}%;"><div class="hex-num"><h3>{{value}}</h3></div></div>
     </div>
     <div class="form-holder">
-      <div class="form-box input-group">
-        <label class="input-group-addon">Number: </label><input class="form-control" ng-model="colorInfo.number"/>
-      </div>
-      <div class="form-box input-group">
-        <label class="input-group-addon">Hex Value: </label><input class="form-control" ng-model="colorInfo.hex"/>
+      <div class="form-panel">
+        <div class="form-box input-group">
+          <label class="input-group-addon">Number: </label><input class="form-control" ng-model="colorInfo.number"/>
+        </div>
+        <br/>
+        <div class="form-box input-group">
+          <label class="input-group-addon">Hex Value: </label><input class="form-control" ng-model="colorInfo.hex"/>
+        </div>
       </div>
     </div>
     <div id="footer"></div>
