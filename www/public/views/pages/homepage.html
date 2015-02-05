@@ -1,14 +1,14 @@
 <div class="outer">
     <div id="header"></div>
     <div id="content">
-        <div class="row innerBox center" style="background-color: #{{colorInfo.hex}};">
+        <!-- <div class="row innerBox center" style="background-color: #{{colorInfo.hex}};">
             <div class="col-sm-3 col-md-3"></div>
             <div class="col-sm-6 col-md-6">
               <h1 style="font-size: {{headerSize}}px;">{{colorInfo.number}}</h1>
               <h3 style="font-size: {{subTitleSize}}px;">{{colorInfo.hex}}</h3>
             </div>
             <div class="col-sm-3 col-md-3"></div>
-        </div>
+        </div> -->
         <div class="row">
           <div class="col-sm-3 col-md-3"></div>
           <div class="col-sm-6 col-md-6 center">
@@ -33,8 +33,9 @@
         </div>
         <div class="row">
           <div class="col-sm-3 col-md-3"></div>
-          <div class="col-sm-6 col-md-6 center">
-            <button ng-repeat="color in colorOptions" class="btn btn-default colorButton" style="background-color: {{color}};" ng-click="changeColor(color)">{{color}}</button>
+          <div class="col-sm-12 col-md-12 center">
+            <!-- <button ng-repeat="color in colorOptions" class="btn btn-default colorButton" style="background-color: {{color}}; width: {{size}}%;" ng-click="changeColor(color)">{{color}}</button> -->
+            <div ng-repeat="value in hexValues" class="hex" style="background-color: {{value}}; width: {{size}}%;">{{value}}</div>
           </div>
           <div class="col-sm-3 col-md-3"></div>
         </div>

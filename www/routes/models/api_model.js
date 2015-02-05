@@ -1,9 +1,6 @@
 // java = require('java');
 
-// var titleContent = {title: "HEY THERE",
-//                     subtitle: "welcome to your premade app!"};
-
-var colorContent = {number: 6,
+var colorContent = {number: 5,
                     hex: "123456"};
 
 module.exports.getValues = function(encodedParamsObject, callback){
