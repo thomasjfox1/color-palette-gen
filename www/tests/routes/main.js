@@ -58,13 +58,13 @@ test('can I GET getData/title?', function(t){
       data += d;
     });
 
-    // response.on('end', function(e){
-      // var results = JSON.parse(data);
-      // t.equals(results.title, "HEY THERE");
-      // t.equals(results.subtitle,"welcome to your premade app!");
-      // t.end();
-      // 
-    // });
+    response.on('end', function(e){
+      var results = JSON.parse(data);
+      t.equals(results.title, "HEY THERE");
+      t.equals(results.subtitle,"welcome to your premade app!");
+      t.end();
+
+    });
 
   });
 

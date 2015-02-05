@@ -1,35 +1,36 @@
 // java = require('java');
 
-var titleContent = "Test Test Test";
+// var titleContent = {title: "HEY THERE",
+//                     subtitle: "welcome to your premade app!"};
 
-module.exports.getData = function(encodedParamsObject, callback){
+var colorContent = {number: 6,
+                    hex: "123456"};
+
+module.exports.getValues = function(encodedParamsObject, callback){
 
     var paramsObject = decodeURI(encodedParamsObject);
 
-    if(paramsObject == "title"){
+    // if(paramsObject == "title"){
+    //
+    //     // java.classpath.push("/src/com/tomlomon/ColorGen.class");
+    //
+    //
+    //     // var ColorGen = java.import("com.tomlomon.ColorGen");
+    //     // var color = new ColorGen();
+    //
+    //     // color.setBase("EA8E8B");
+    //     // color.setHarshness((float).8);
+    //     // color.setSteps((byte)4);
+    //     // color.nextColors();
+    //     // callback(color.toString());
+    //
+    //     callback(titleContent);
+    // }
 
-        // java.classpath.push("/src/com/tomlomon/ColorGen.class");
-
-
-        // var ColorGen = java.import("com.tomlomon.ColorGen");
-        // var gradient = new ColorGen();
-
-        // javap.classpath.push("./java/ColorGen.class");
-
-        // gradient.setBase("EA8E8B");
-        // gradient.setHarshness((float).8);
-        // gradient.setSteps((byte)4);
-        // gradient.nextColors();
-
-        // callback(ColorGen.toString());
-        callback(titleContent);
+    if(paramsObject == "colors"){
+        callback(colorContent);
     }
     else{
         callback(null);
     }
 };
-
-
-// var ArrayList = java.import('java.util.ArrayList');
-// var list = new ArrayList();
-// list.addSync('item1');

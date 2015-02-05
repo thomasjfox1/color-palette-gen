@@ -1,9 +1,9 @@
-angular.module('wwwApp')
+angular.module('color-palatte-gen')
     .factory('ajaxFactory', function($http) {
 
             return {
-                getAppTitle : function() {
-                    return $http.get('/api/getData/title')
+                getColors : function(){
+                    return $http.get('/api/getValues/colors')
                                 .then(function(result){
                                     return result.data;
                                 });

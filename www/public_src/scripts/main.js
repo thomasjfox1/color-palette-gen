@@ -1,4 +1,4 @@
-angular.module('wwwApp', ['ngRoute'])
+angular.module('color-palatte-gen', ['ngRoute'])
     .config(function($routeProvider) {
         $routeProvider
             .when('/', {
