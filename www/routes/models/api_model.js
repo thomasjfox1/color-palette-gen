@@ -15,9 +15,14 @@ module.exports.getValues = function(encodedParamsObject, encodedNumberObject, en
 
         var clrs = new Palette();
 
-        // clrs.setBase(hexObject.toString());
+        // var hex = String(hexObject);
+
+        clrs.setBase(hexObject);
+        clrs.setSteps(numberObject);
+        clrs.setHarshness(45);
         // clrs.nextColors();
         callback(clrs.nextColors());
+        // callback();
     }
     else{
         callback(null);

@@ -5,7 +5,7 @@ angular.module('color-palatte-gen')
         $scope.subTitleSize = null;
         $scope.titleBGColor = '#555';
 
-        $scope.colorInfo = {number: 5, hex: "000000"};
+        $scope.colorInfo = {number: 10, hex: "2ed3aa"};
 
         ajaxFactory.getColors($scope.colorInfo.number, $scope.colorInfo.hex).then(function(results){
             $scope.hexValues = results;

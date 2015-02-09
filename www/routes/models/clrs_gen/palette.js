@@ -50,7 +50,7 @@ Palette.prototype.calcIntervalsR = function(input) {
 
 Palette.prototype.setBase = function(HEX) {
 	HEX = HEX.trim();
-	if (HEX.length() != 6) return false;
+	if (HEX.length != 6) return false;
 
 	currentBaseColor = HEX.toLowerCase();
 	changeableRGB = calcMost(currentBaseColor);
@@ -59,7 +59,7 @@ Palette.prototype.setBase = function(HEX) {
 
 Palette.prototype.setBaseR = function(HEX) {
 	HEX = HEX.trim();
-	if (HEX.length() != 6) return false;
+	if (HEX.length != 6) return false;
 
 	currentBaseColor = HEX.toLowerCase();
 	changeableRGB = calcLeast(currentBaseColor);
