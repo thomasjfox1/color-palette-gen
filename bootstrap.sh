@@ -1,11 +1,5 @@
 sudo add-apt-repository -y ppa:chris-lea/node.js
 
-#JAVA
-
-#something really funky going on with the jdk install
-sudo apt-get -y install openjdk-7-jdk
-sudo apt-get -y install openjdk-7-jre
-
 sudo apt-get update
 
 # RUN OUR INSTALLS:

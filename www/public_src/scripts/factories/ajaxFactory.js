@@ -2,8 +2,8 @@ angular.module('color-palatte-gen')
     .factory('ajaxFactory', function($http) {
 
             return {
-                getColors : function(){
-                    return $http.get('/api/getValues/colors')
+                getColors : function(number, hex){
+                    return $http.get('/api/getValues/colors/' + number + '/' + hex +'/')
                                 .then(function(result){
                                     return result.data;
                                 });

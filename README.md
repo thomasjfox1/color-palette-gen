@@ -52,7 +52,7 @@ As an alternative, you can run the live versions of the bootstrap and setup conf
 
 `grunt build`
 
-Navigate to `http://localhost:8082` in your browser to see the action!
+Navigate to `http://localhost:8085` in your browser to see the action!
 
 **Run grunt watch for live editing/minification:**
 

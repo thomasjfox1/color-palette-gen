@@ -26,9 +26,7 @@
     "tape": "^3.0.3",
     "testling": "^1.7.1",
     "time-grunt": "~0.2.9",
-    "uglify-js": "~2.4.12",
-    "node-gyp": "^0.5.0",
-    "java": "^0.4.5"
+    "uglify-js": "~2.4.12"
   },
   "testling": {
     "files": ["tests/public_src/**/*.js"],

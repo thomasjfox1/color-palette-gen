@@ -3,19 +3,24 @@
     <div id="content">
     </div>
     <div class="col-sm-12 col-md-12 center hex-container">
-      <!-- <button ng-repeat="color in colorOptions" class="btn btn-default colorButton" style="background-color: {{color}}; width: {{size}}%;" ng-click="changeColor(color)">{{color}}</button> -->
-      <div ng-repeat="value in hexValues" class="hex" style="background-color: {{value}}; width: {{size}}%;"><div class="hex-num"><h3>{{value}}</h3></div></div>
+      <div ng-repeat="value in hexValues" class="hex" style="background-color: #{{value}}; width: {{size}}%;"><div class="hex-num"><h3>{{value}}</h3></div></div>
     </div>
     <div class="form-holder">
-      <div class="form-panel">
-        <div class="form-box input-group">
-          <label class="input-group-addon">Number: </label><input class="form-control" ng-model="colorInfo.number"/>
-        </div>
-        <br/>
+      <!-- <div class="slider">Some content here....
+      </div> -->
+      <!-- <div class="picker-container">
+      </div> -->
+      <form class="form-panel">
         <div class="form-box input-group">
           <label class="input-group-addon">Hex Value: </label><input class="form-control" ng-model="colorInfo.hex"/>
         </div>
-      </div>
+        <br/>
+        <div class="form-box input-group hex-input">
+          <label class="input-group-addon">Intervals: </label><input class="form-control" ng-model="colorInfo.number"/>
+        </div>
+        <button class="btn btn-default colorButton" ng-click="changeColor()">SUBMIT</button>
+
+      </form>
     </div>
     <div id="footer"></div>
 </div>
