@@ -2,6 +2,8 @@
 
 This website is designed to generate custom gradients and color palettes randomly or with user input.
 
+First stage testing located at: [clrs.herokuapp.com](http://clrs.herokuapp.com/#/)
+
 ### System Configs ###
 
 **Created and Tested With:**
